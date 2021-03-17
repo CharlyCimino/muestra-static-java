@@ -6,14 +6,13 @@ public class Auto {
     private String marca;
     private double precio;
     private String color;
-    private static double dcto;
+    private static double dcto = 10; // Los valores estáticos conviene inicializarlos fuera del constructor
 
     public Auto(String patente, String marca, double precio, String color) {
         this.patente = patente;
         this.marca = marca;
         this.precio = precio;
         this.color = color;
-        Auto.dcto = 10;
     }
 
     public double precioPromocional() {
